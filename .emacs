@@ -32,3 +32,7 @@
 (setq display-fill-column-indicator-character ?│)
 (setq-default fill-column 80)
 (global-display-fill-column-indicator-mode 1)
+
+;; Remove startup screen and scratch buffer
+(setq inhibit-startup-screen t)
+(setq initial-scratch-message nil)
