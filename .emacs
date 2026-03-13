@@ -19,7 +19,7 @@
 ;; Set font parameters
 (set-face-attribute 'default nil
 		    :font "JetBrains Mono"
-		    :height 110)
+		    :height 100)
 
 ;; Set 90% opacity (subtle but readable)
 (set-frame-parameter nil 'alpha 95)
@@ -39,3 +39,6 @@
 
 ;; Set initial buffer
 (setq initial-buffer-choice "~/.emacs")
+
+;; No backup files
+(setq make-backup-files 'nil)
