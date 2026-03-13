@@ -40,7 +40,7 @@
 ;; Set font parameters
 (set-face-attribute 'default nil
 		    :font "JetBrains Mono"
-		    :height 100)
+		    :height 110)
 
 ;; Set 90% opacity (subtle but readable)
 (set-frame-parameter nil 'alpha 95)
@@ -63,3 +63,6 @@
 
 ;; No backup files
 (setq make-backup-files 'nil)
+
+;; Set window margins
+(set-window-margins nil 0 1)
