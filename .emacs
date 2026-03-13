@@ -30,6 +30,10 @@
 (setq display-line-numbers-type 'absolute)
 (setq display-line-numbers-width '3)
 
+;; Highlight line.
+(global-hl-line-mode 1)
+(setq global-hl-line-sticky-flag t)
+
 ;; Remove annoying beep/bell sound
 (setq ring-bell-function 'ignore)
 
