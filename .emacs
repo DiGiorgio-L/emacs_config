@@ -36,3 +36,6 @@
 ;; Remove startup screen and scratch buffer
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
+
+;; Set initial buffer
+(setq initial-buffer-choice "~/.emacs")
