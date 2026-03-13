@@ -1,6 +1,23 @@
 ;; Author: Leonardo Di Giorgio
 ;; Email: leonardodigiorgio@proton.me
 
+;; Initialize package managers.
+(require 'package)
+(setq package-archives
+      '(("gnu"   . "https://elpa.gnu.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")))
+(when (< emacs-major-version 29)
+  (setq package-archives
+        (cons '("nongnu" . "https://elpa.nongnu.org/packages/")
+              package-archives)))
+
+(package-initialize)
+
+;; Color theme package.
+(use-package kanagawa-themes
+  :ensure t)
+(load-theme 'kanagawa-wave t)
+
 ;; Remove unnecessary UI elements when in graphic mode (non-cli mode)
 (when (display-graphic-p)
   (menu-bar-mode -1)
